@@ -155,7 +155,7 @@ const Setting = () => {
                                     value={nickname}
                                     isFormValid={isFormValid}
                                     setIsFormValid={setIsFormValid}
-                                    className='w-520'
+                                    className='w-520 min-w-100'
                                 />
                             ) : (
                                 <div className='my-8 inline-flex h-auto w-auto flex-col items-start justify-start gap-2'>
@@ -164,7 +164,7 @@ const Setting = () => {
                                     </label>
                                     <span
                                         onClick={handleClickNicknameInput}
-                                        className='inline-flex h-50 cursor-pointer items-center justify-start gap-2.5 rounded-4 border bg-white px-16 py-15'
+                                        className='inline-flex h-50 min-w-100 cursor-pointer items-center justify-start gap-2.5 rounded-4 border bg-white px-16 py-15'
                                     >
                                         {nickname}
                                     </span>

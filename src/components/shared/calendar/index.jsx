@@ -22,8 +22,6 @@ const Calendar = () => {
         fetchCalendarData(year, month);
     }, [currentDate]);
 
-    console.log(completedCounts);
-
     // 이전 달로 이동하는 함수
     const handlePrevMonth = () => {
         setCurrentDate(subMonths(currentDate, 1));

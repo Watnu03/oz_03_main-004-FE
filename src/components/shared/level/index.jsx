@@ -37,7 +37,7 @@ const CircularProgressBar = ({ level, currentXP, maxXP }) => {
     const normalizedRadius = radius - stroke * 2; // 선 두께를 뺀 반지름 계산
     const circumference = normalizedRadius * 2 * Math.PI; // 원의 둘레 계산
     const progress = currentXP / maxXP; // 현재 경험치 비율 계산
-    const strokeDashoffset = circumference - progress * circumference; // 선의 시작점 설정
+    const strokeDashoffset = Number(circumference - progress * circumference); // 선의 시작점 설정
 
     return (
         <div

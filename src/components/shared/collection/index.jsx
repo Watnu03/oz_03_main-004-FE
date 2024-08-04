@@ -46,9 +46,9 @@ function Collection({ onSelectImage }) {
         }
     };
 
-    const images = import.meta.glob('/src/assets/images/*Potato.{png,jpg,jpeg,png}');
+    const images = import.meta.glob('/images/*Potato.{png,jpg,jpeg,png}');
     const imageFiles = Object.keys(images)
-        .map((key) => key.replace('/src/assets/images/', '').replace('.png', ''))
+        .map((key) => key.replace('/images/', '').replace('.png', ''))
         .filter((fileName) => fileName !== 'Group');
 
     const orderedImages = description
@@ -68,7 +68,7 @@ function Collection({ onSelectImage }) {
                 <img src={image.imagePath} alt={`Potato ${image.id + 1}`} className='h-118 w-85' />
                 {!image.isAcquired && (
                     <div className='absolute left-0 top-0 flex h-full w-full items-center justify-center bg-[#d9d9d9] bg-opacity-50 backdrop-blur-sm'>
-                        <img src='/src/assets/images/Group.png' alt='Overlay' className='h-auto w-135' />
+                        <img src='/images/Group.png' alt='Overlay' className='h-auto w-135' />
                     </div>
                 )}
                 <p className='mt-2'>{image.title}</p>
@@ -90,9 +90,9 @@ function Collection({ onSelectImage }) {
             </div>
             <button onClick={toggleSize} className='absolute right-2 top-2 rounded-4 bg-transparent p-2'>
                 {isExpanded ? (
-                    <img src='/src/assets/images/uparrow.png' alt='Collapse' className='mr-33 mt-27 h-19 w-19' />
+                    <img src='/images/uparrow.png' alt='Collapse' className='mr-33 mt-27 h-19 w-19' />
                 ) : (
-                    <img src='/src/assets/images/downarrow.png' alt='Expand' className='mr-33 mt-27 h-19 w-19' />
+                    <img src='/images/downarrow.png' alt='Expand' className='mr-33 mt-27 h-19 w-19' />
                 )}
             </button>
             <div className='overflow-y-scroll scrollbar-hide'>

@@ -32,7 +32,7 @@ export const collectionService = {
 
     getPotatoImages: (files, allPotatoes, ownedPotatoes) => {
         return files.map((fileName, i) => {
-            const imagePath = `/src/assets/images/${fileName}.png`;
+            const imagePath = `/images/${fileName}.png`;
             const title = fileName;
             const potatoTypeId = allPotatoes.find((item) => item.name === fileName)?.id;
             const isAcquired = ownedPotatoes.some((potato) => potato.type === potatoTypeId && potato.isAcquired);

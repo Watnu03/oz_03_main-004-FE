@@ -158,7 +158,7 @@ const UserUpdateModal = ({ isOpen, onClose }) => {
                                     <SwiperSlide key={index} className='flex items-center justify-center'>
                                         <div className='flex h-190 w-170 flex-shrink-0 flex-col items-center justify-center rounded-4 border shadow-custom-light'>
                                             <img
-                                                src={`/src/assets/images/${potato.potatoName}.png`}
+                                                src={`/images/${potato.potatoName}.png`}
                                                 alt=''
                                                 className='h-118 w-85 object-cover'
                                             />

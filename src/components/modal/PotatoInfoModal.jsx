@@ -49,7 +49,7 @@ const PotatoInfoModal = ({ isOpen, selectedImage, onClose, onOk, isOverlayed }) 
                         />
                         {isOverlayed && (
                             <div className='absolute inset-0 flex items-center justify-center rounded-4 bg-[#d9d9d9] bg-opacity-30 backdrop-blur-sm'>
-                                <img src='/src/assets/images/Group.png' alt='Overlay' className='h-100 w-100' />
+                                <img src='/images/Group.png' alt='Overlay' className='h-100 w-100' />
                             </div>
                         )}
                     </div>

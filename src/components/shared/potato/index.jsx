@@ -55,13 +55,12 @@ const Potato = () => {
     return (
         <div className='flex h-auto w-auto flex-col items-center'>
             <div className='flex w-full justify-center'>
-                <img src='/src/assets/images/coin.png' className='mb-30 mr-5 h-20 w-20 text-14' alt='Coin' /> :{' '}
-                {coinCount}
+                <img src='/images/coin.png' className='mb-30 mr-5 h-20 w-20 text-14' alt='Coin' /> : {coinCount}
             </div>
             {selectedPotato ? (
                 <div>
                     <img
-                        src={`/src/assets/images/${selectedPotato.name}.png`}
+                        src={`/images/${selectedPotato.name}.png`}
                         alt='Selected Potato'
                         className='hwide:h-120 hwide:w-150 wide:h-118 wide:w-85'
                     />
